@@ -1,1 +1,2 @@
- this file is made to test hard reset feature
+this file is made to test hard reset feature
+this line is to check hard reset feature
