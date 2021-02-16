@@ -1,0 +1,1 @@
+ this file is made to test hard reset feature
