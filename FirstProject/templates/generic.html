@@ -1,0 +1,13 @@
+{{tag_var}}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<form method = "POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Login" />
+</form>
+
+<h1>Hi! Welcome to the innovation with python training</h1>
