@@ -1,0 +1,24 @@
+<h1>Blog Posts</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in object_list %}
+        <tr>
+            <td>{{ post.Name }}</td>
+            <td>{{ post.Email }}</td>
+            <td><a href="{% url "post_edit" post.id %}">edit</a></td>
+            <td><a href="{% url "post_delete" post.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "post_new" %}">New</a>
